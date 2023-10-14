@@ -11,5 +11,6 @@ public class TestBase {
     static void up() {
         RestAssured.baseURI = Config.config.apiUrl();
         Configuration.baseUrl = Config.config.webUrl();
+        Api.getCookie();
     }
 }
